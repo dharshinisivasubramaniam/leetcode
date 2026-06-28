@@ -1,0 +1,11 @@
+class Solution:
+    def isPrefixOfWord(self, sentence,searchWord):
+        words = sentence.split()
+        index=1
+        for word in words:
+            if word.startswith(searchWord):
+                return index
+            index+=1
+        return -1
+obj=Solution()
+obj.isPrefixOfWord("i love eating burger", "burg")
